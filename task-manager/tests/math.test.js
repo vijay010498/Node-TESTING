@@ -1,14 +1,13 @@
-test('Hello world!', () => {
+const {calcTip} = require("../src/math")
 
+test('should calculate total tip',() =>{
+    const total=  calcTip(10,.3);
+    expect(total).toBe(13);
 })
 
-test('This should fail', () => {
-    throw new Error('Failure!')
-})
-
-// 
+//
 // Why test?
-// 
+//
 // - Saves time
 // - Creates reliable software
 // - Gives flexibility to developers
